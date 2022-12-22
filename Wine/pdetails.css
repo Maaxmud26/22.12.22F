@@ -1,0 +1,92 @@
+#Header{
+    width: 100%;
+    padding: 30px 4rem;
+    border-bottom: 1px solid #ddd;
+}
+.Header-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    max-height: 22px;
+    width: auto;
+}
+.Header-all{
+    margin: 0px 20px;
+}
+.navbar a{
+    text-decoration: none;
+    margin: 0px 20px;
+    color: #000;
+    position: relative;
+    font-family: Marcellus,serif;
+}
+.icon a{
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Marcellus,serif;
+}
+
+.icon{
+    position: relative;
+
+}
+.icon i{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: .5s;
+}
+.icon i:hover{
+    transform: translateY(-15%);
+}
+.icon span{
+    position: absolute;
+    background-color:#c0a483;
+    color: #fff;
+   top: -9px;
+  right: -5px;
+  padding: 0 5px 0;
+  border-radius: 100%;
+  font-size: 12px;
+
+}
+
+
+.icon :hover i{
+    bottom: 10px;
+}
+
+.navbar{
+  margin-right: 40px;
+    display: flex;
+    align-items: center;
+    font-family: Marcellus,serif;
+
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    background-color: #000;
+    height: 1px;
+    bottom: 0px;
+    left: 0;
+    transition: .6s;
+
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+.icon :hover{
+    color: #c0a483;
+    cursor: pointer;
+}
+.icon a{
+    margin-right: 20px;
+    font-size: 12px;
+    font-family: Marcellus,serif;
+}
